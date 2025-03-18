@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #heading {
+            margin-left: 100px;
+        }
+        
+        #container {
+            width: 600px;
+            height: 600px;
+            background-color: lightblue;
+            border: 2px solid black;
+            display: flex;
+        }
+        
+        .box {
+            width: 75px;
+            height: 75px;
+            border: 2px solid black;
+            margin: 10px;
+            /* flex-grow: 1; */
+        }
+        
+        #box1 {
+            background-color: blueviolet;
+            order: 4;
+        }
+        
+        #box2 {
+            background-color: blue;
+            order: 3;
+            /* flex-grow: 2; */
+        }
+        
+        #box3 {
+            background-color: chocolate;
+            order: 1;
+        }
+        
+        #box4 {
+            background-color: darkorange;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex item1</div>
+        <div id="box2" class="box">Flex item2</div>
+        <div id="box3" class="box">Flex item3</div>
+        <div id="box4" class="box">Flex item4</div>
+
+
+    </div>
+</body>
+
+</html>

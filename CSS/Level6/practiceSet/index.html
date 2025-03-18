@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: aqua;
+        }
+        
+        nav a {
+            text-decoration: none;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            height: 25px;
+            padding-top: 5px;
+        }
+        
+        #image-container {
+            border: 2px solid black;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+        
+        .image {
+            height: 200px;
+        }
+        
+        #container-box {
+            border: 1px solid black;
+            height: 150px;
+            width: 210px;
+            ;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .box {
+            width: 70px;
+            height: 75px;
+            border: 1px solid red;
+            margin: 5px;
+            flex-shrink: 0;
+        }
+        
+        #box2 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        
+        #media-box {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        
+        @media screen and (min-width:300px) and (max-width:400px) {
+            #media-box {
+                background-color: red;
+            }
+        }
+        
+        @media screen and (min-width:400px) {
+            #media-box {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image-container">
+            <img class="image" src="/image/monkey.avif" alt="monkey">
+        </div>
+        <div id="container-box">
+            <div id="box1" class="box">item1</div>
+            <div id="box2" class="box">item2</div>
+            <div id="box3" class="box">item3</div>
+        </div>
+        <hr>
+        <div id="media-box"> meadia</div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

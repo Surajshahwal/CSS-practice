@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo classes</title>
+    <style>
+        .btn {
+            height: 25px;
+            width: 150px;
+            background-color: aqua;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: calc(3, end);
+            transition-delay: 1s;
+            /* transition: all 1s ease-in-out 0s; */
+        }
+        
+        .btn:hover {
+            height: 50px;
+            width: 200px;
+            background-color: green;
+        }
+        
+        .btn:active {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">click me</button>
+</body>
+
+</html>
